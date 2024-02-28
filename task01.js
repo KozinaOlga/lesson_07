@@ -1,7 +1,7 @@
 'use strict';
 
 //__________-первый вариант
-
+/*
 const length = 100;
 
 const numbres = [...Array(length)];
@@ -24,3 +24,17 @@ const generateArray = (length) => (
 
 const num = generateArray(1, 100);
 console.log(num);
+
+*/
+// третий вариант
+const arr = [];
+
+const getRendom = elem => {
+    arr.push(Math.trunc(Math.random() * 100) + 1);
+    console.log('arr: ', arr);
+}
+
+getRendom();
+
+
+
