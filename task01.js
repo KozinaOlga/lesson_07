@@ -39,14 +39,22 @@ const getRandom = (elem) => {
     return randomArray;
     }
 
-console.log(getRandom(1, 101));
+console.log(getRandom(101));
 
-const get = elem => {
+
+const getRandomNumber = elem => {
     const array = [];
-    const newArray = array.map(() => {
-        return elem 
-    })
+
+    elem.map(() => {
+        const randomNumber = Math.trunc((Math.random() * 100) + 1);
+        array.push(randomNumber);
+    });
+    return array;
 }
+
+const result = getRandomNumber([101]);
+console.log('result: ', result);
+
 
 
 
