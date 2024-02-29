@@ -1,6 +1,6 @@
 'use strict';
 
-
+/*
 const getRandomNumber = (elem, n, m) => {
     const array = [];
 
@@ -39,3 +39,4 @@ const generateRandomArray = (n, m, count) => {
   }
   
   console.log(a)
+  */

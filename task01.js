@@ -27,14 +27,43 @@ console.log(num);
 
 */
 // третий вариант
-const arr = [];
 
-const getRendom = elem => {
-    arr.push(Math.trunc(Math.random() * 100) + 1);
-    console.log('arr: ', arr);
+
+const getRandom = (elem) => {
+    const randomArray = [];
+
+    for(let i = 0; i < elem; i++) {
+        const randomNum = Math.trunc((Math.random() * 100) + 1);
+        randomArray.push(randomNum); 
+    }
+    return randomArray;
+    }
+
+console.log(getRandom(1, 101));
+
+const get = elem => {
+    const array = [];
+    const newArray = array.map(() => {
+        return elem 
+    })
 }
 
-getRendom();
 
+
+
+
+
+
+
+
+/*
+let dogs = new Array('Beagle', 'Boxer', 'Bulldog', 'Corgi');
+let newDog = [ ];
+dogs.forEach ( ( element ) => {
+newDog.push ( element );
+console.log('element: ', element);
+})
+
+*/
 
 
